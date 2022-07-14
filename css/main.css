@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --clr-black: #000;
     --clr-dark: #333;
@@ -82,6 +89,7 @@ img {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 1px;
+    text-transform: uppercase;
     color: #FFFFFF;
     background-color: var(--clr-green);
 }
@@ -91,7 +99,7 @@ img {
 
 .site-header {
     padding: 45px 0;
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -130,11 +138,16 @@ img {
 
 
 .hero-section {
-    padding-left: 150px;
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url(../images/hero-bg.jpg);
+}
+.hero, .site-header {
+    background-image: url(../images/hero-bg.jpg);
 }
 
 .hero-wrapper {
+    position: absolute;
+    top: 211px;
+    left: 944px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165,24 +178,22 @@ img {
     color: var(--clr-black);
 }
 
-.hero-img-wrapper {
+.hero-img {
     position: relative;
+    left: 357px;
+    margin: 0 auto;
 }
 
 .hero-img-wrapper::before {
     position: absolute;
-    top: -80px;
-    left: -65px;
+    top: 82px;
+    left: 1422px;
     width: 160px;
     height: 160px;
     background-image: url("../images/but-first-cofe.png");
     background-position: center;
     z-index: 1;
     content: "";
-}
-
-.hero-img {
-    position: relative;
 }
 
 /* collections start */
