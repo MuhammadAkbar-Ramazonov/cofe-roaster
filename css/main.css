@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --clr-black: #000;
     --clr-dark: #333333;
@@ -679,9 +686,6 @@ p{
     background-position: center;
 }
 
-.how-it-works-inner-item {
-}
-
 .how-it-works-inner-item:nth-child(2){
     margin-right: 393px;
     margin-left: 393px;
@@ -814,6 +818,20 @@ p{
     margin: 5% auto;
 }
 
+@-webkit-keyframes modal-animation{
+    from{
+        width: 561px;
+        height: 485px;
+        margin-top: 157px;
+
+    }
+    to{
+        width: 561px;
+        height: 485px;
+        margin-top: -300px;
+    }
+}
+
 @keyframes modal-animation{
     from{
         width: 561px;
@@ -839,12 +857,18 @@ p{
     background: #F6F6F6;
     border-radius: 20px;
 
-    animation-name: modal-animation;
-    animation-duration: 3s;
-    animation-iteration-count: none;
+    -webkit-animation-name: modal-animation;
+
+            animation-name: modal-animation;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: none;
+            animation-iteration-count: none;
     animation-direction: alternate-reverse;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     
 }
 
