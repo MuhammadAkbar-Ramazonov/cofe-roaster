@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 :root {
     --clr-black: #000;
     --clr-dark: #333333;
@@ -739,8 +732,6 @@ p{
     margin-left: 30px;
 }
 
-.site-footer-wrapper-item-link {
-}
 .site-footer-wrapper-item-image {
     width: 30px;
     height: 30px;
